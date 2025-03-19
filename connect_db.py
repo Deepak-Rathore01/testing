@@ -34,7 +34,10 @@ try:
         print("the employee table is:")
         for row in result:
             print(row)
-	
+        cursor.execute("select * for TEACHES")
+        print("the employee table is:")
+        for row in result:
+            print(row)
 
 
 except mysql.connector.Error as err:
